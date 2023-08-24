@@ -27,11 +27,11 @@ function AnimalShow({ type }) {
 
   return (
     <div onClick={handleClicks} className="animal">
-      <h3>
-        Show animals: {type} - {clicks}
-      </h3>
+      <p>
+        {type} - {clicks}
+      </p>
       <img src={svgMap[type]} alt={type} />
-      <img src={heart} alt="heart" style={{ width: 10 + 10 * clicks}}/>
+      <img src={heart} alt="heart" style={{ width: 10 + 10 * clicks }} />
     </div>
   );
 }
